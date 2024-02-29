@@ -1,0 +1,103 @@
+.surahList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.surahList .no-results, .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+    font-size: 30px;
+    font-weight: bold;
+    color: #180101;
+    /* margin: 20px; */
+}
+
+body.dark .surahList .no-results{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.surahCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3.3;
+    border: 1px solid #ebeef0;
+    margin: 10px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+body.dark .surahCard{
+    background-color: #1f2125;
+    border: 1px solid #464b50;
+}
+.surahCard:hover{
+    border: 1px solid #F88016;
+    text-decoration: none;
+}
+.surahCard:hover .leftInfo .num{
+    background-color: #F88016;
+    color: #fff;
+}
+
+.leftInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftInfo .num{
+    background-color: #F2D4D4;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.leftInfo .name h3{
+    font-size: 17px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+body.dark .leftInfo .name h3{
+    color: #F88016;
+}
+.leftInfo .name p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5f6368;
+}
+.surahCard:hover .leftInfo .name p{
+    color: #F99423;
+}
+.rightInfo span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5f6368;
+}
+body.dark .rightInfo span{
+    color: #fff;
+}
+.rightInfo p{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5f6368;
+    font-family:'Times New Roman', Times, serif;
+}
+.surahCard:hover .rightInfo p{
+    color: #F99423;
+}
